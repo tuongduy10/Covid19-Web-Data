@@ -11,6 +11,8 @@ function fetchData(){
             const nguon = data['source_covid']
 
             const htmls = dulieu.map(item =>{
+                var index = dulieu.findIndex(i => i.tinh == item.tinh)
+                index++
                 return `<ul id="data-list"> <h3>${item.tinh}</h3> 
                             <li>Ca nhiễm trong ngày: ${item.nhiem}</li>
                             <li>Ca tử vong trong ngày: ${item.tuvong}</li>
