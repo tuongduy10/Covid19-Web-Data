@@ -13,7 +13,7 @@ function fetchData(){
             const htmls = dulieu.map(item =>{
                 var index = dulieu.findIndex(i => i.tinh == item.tinh)
                 index++
-                return `<ul id="data-list"> <h3>${item.tinh}</h3> 
+                return `<ul id="data-list"> <h3> ${index}. ${item.tinh}</h3> 
                             <li>Ca nhiễm trong ngày: ${item.nhiem}</li>
                             <li>Ca tử vong trong ngày: ${item.tuvong}</li>
                             <li>Tổng ca nhiễm: ${item.tong_nhiem}</li>
