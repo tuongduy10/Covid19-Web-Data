@@ -14,7 +14,7 @@ function fetchData(){
                 return `<ul id="data-list"> <h3>${item.tinh}</h3> 
                             <li>Ca nhiễm trong ngày: ${item.nhiem}</li>
                             <li>Ca tử vong trong ngày: ${item.tuvong}</li>
-                            <li>Tổng ca nhiễm trong ngày: ${item.tong_nhiem}</li>
+                            <li>Tổng ca nhiễm: ${item.tong_nhiem}</li>
                             <li>Tổng ca tử vong: ${item.tong_tuvong}</li>
                         </ul>`
             })
