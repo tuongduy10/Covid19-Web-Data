@@ -20,8 +20,8 @@ function fetchData(){
             // Data: tinh, ca nhiem, ca tu vong, ...
             const dulieu = data['data']
             dulieu.sort((i,j) => {
-                var striTong = i.tong_nhiem
-                var strjTong = j.tong_nhiem
+                var striTong = i.nhiem
+                var strjTong = j.nhiem
 
                 // replace . in string and parse into integer
                 // ex: "14.576" => "14576" => 14576
